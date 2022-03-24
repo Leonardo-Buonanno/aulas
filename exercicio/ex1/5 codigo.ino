@@ -1,23 +1,20 @@
-//<span style="font-weight:400">ligando a ledinha</span>
-​
+
 int botao = 2;
 int led = 4;
 bool estadoLed = 0;
-​
 void setup()
 {
-  pinMode(botao,INPUT_PULLUP);//definindo "INPUT"
+  pinMode(botao,INPUT);//
   pinMode(led,OUTPUT);
 }
 
-​
 void loop()
 {
- if(digitalRead(botao)== HIGH)//botao apertado
+ if(digitalRead== HIGH)//
  {
-   estadoLed = !estadoLed;//desliga o led 
+   estadoLed = !estadoLed;//
    digitalWrite(led,estadoLed);
-   while(digitalRead(botao)== HIGH);
+   while(digitalRead== HIGH);
    delay(100);
  }
 }
